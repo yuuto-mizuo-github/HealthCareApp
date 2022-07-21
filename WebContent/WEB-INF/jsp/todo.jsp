@@ -71,6 +71,7 @@ function selectboxChange() {
 				<th>重要度</th>
 				<th>内容</th>
 				<th>期日</th>
+				<th>ジャンル</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -80,6 +81,8 @@ function selectboxChange() {
 					<td>${todo.important}</td>
 					<td>${todo.info}</td>
 					<td>${todo.deadline}</td>
+					<td>${todo.genre}</td>
+					
 				</tr>
 			</c:forEach>
 		</tbody>
@@ -106,6 +109,7 @@ function selectboxChange() {
 		</select>
 		<input type="text" name="info" id="info" size="20" value="">
 		<input type="date" name="deadline" id="deadline" value="">
+		<input type="text" name="genre" id="genre"  value="">
 		<input type="submit" value="変更">
 	</form>
 </section>
