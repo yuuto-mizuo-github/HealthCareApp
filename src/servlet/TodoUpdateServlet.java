@@ -27,6 +27,7 @@ public class TodoUpdateServlet extends LoginCheckServlet {
 		String important = request.getParameter("important");
 		String info = request.getParameter("info");
 		String deadline = request.getParameter("deadline");
+		String genre = request.getParameter("genre");
 
 		// リスト取得
 		HttpSession session = request.getSession();
@@ -48,6 +49,9 @@ public class TodoUpdateServlet extends LoginCheckServlet {
 		}
 		if (deadline != null && deadline.length() != 0) {
 			todo.setDeadline(deadline);
+		}
+		if (genre != null && genre.length() != 0) {
+			todo.setGenre(genre);
 		}
 
 		// 処理

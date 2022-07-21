@@ -27,7 +27,7 @@ public class MainServlet extends LoginCheckServlet {
 		HttpSession session = request.getSession();
 		@SuppressWarnings("unchecked")
 		ArrayList<Todo> todoList = (ArrayList<Todo>) session.getAttribute("todoList");
-		if (todoList != null && todoList.size() > 0) {
+		if (todoList != null && todoList.size() > 0  ) {
 			// 先頭1件を取得する
 			request.setAttribute("todoTopic", todoList.get(0));
 		}

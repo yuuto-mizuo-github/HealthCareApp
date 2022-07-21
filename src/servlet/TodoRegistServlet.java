@@ -26,6 +26,7 @@ public class TodoRegistServlet extends LoginCheckServlet {
 		String important = request.getParameter("important");
 		String info = request.getParameter("info");
 		String deadline = request.getParameter("deadline");
+		String genre = request.getParameter("genre");
 
 		// パラメータチェック
 		StringBuilder errorMsg = new StringBuilder();
@@ -38,6 +39,9 @@ public class TodoRegistServlet extends LoginCheckServlet {
 		if (deadline == null || deadline.length() == 0) {
 			errorMsg.append("期日が入力されていません<br>");
 		}
+		if (deadline == null || deadline.length() == 0) {
+			errorMsg.append("ジャンルが入力されていません<br>");
+		}
 		if (errorMsg.length() > 0) {
 			// エラー発生
 			request.setAttribute("errorMsg", errorMsg);
@@ -49,14 +53,14 @@ public class TodoRegistServlet extends LoginCheckServlet {
 		// リスト取得
 		HttpSession session = request.getSession();
 		@SuppressWarnings("unchecked")
-		ArrayList<Todo> todoList = (ArrayList<Todo>) session.getAttribute("todoList");
-		if (todoList == null) {
+		ArrayList<Todo> todoList = (ArrayList<Todo>)session.getAttribute("todoList");
+		if (todoList==null) {
 			// 取得できなかった場合は新規作成
 			todoList = new ArrayList<Todo>();
 		}
 
 		// 処理
-		Todo todo = new Todo(Integer.parseInt(important), info, deadline);
+		Todo todo = new Todo(Integer.parseInt(important), info, deadline,genre);
 		new TodoModel().regist(todoList, todo);
 
 		// リスト格納

@@ -13,14 +13,17 @@ public class Todo implements Serializable {
 	private String info;
 	/** 期限 */
 	private String deadline;
+	/**ジャンル**/
+	private String genre;
 
 	public Todo() {
 	}
 
-	public Todo(int important, String info, String deadline) {
+	public Todo(int important, String info, String deadline,String genre) {
 		this.important = important;
 		this.info = info;
 		this.deadline = deadline;
+		this.genre = genre;
 	}
 
 	public int getImportant() {
@@ -45,6 +48,14 @@ public class Todo implements Serializable {
 
 	public void setDeadline(String deadline) {
 		this.deadline = deadline;
+	}
+
+	public String getGenre() {
+		return genre;
+	}
+
+	public void setGenre(String genre) {
+		this.genre = genre;
 	}
 
 }
