@@ -66,6 +66,14 @@
 						</tr>
 					</tbody>
 					</table>
+					<section>
+					<table border="1">
+					<tr>
+					<th>前回のBMI</th>
+					<td>${bmi.bmi}</td>
+					</tr>
+					</table>
+					</section>
 				</div>
 			</c:otherwise>
 		</c:choose>
