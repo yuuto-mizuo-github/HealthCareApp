@@ -10,8 +10,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import bean.Bmi;
 import bean.Todo;
 import bean.User;
+import model.BmiModel;
 import model.LoginModel;
 import model.TodoModel;
 
@@ -43,7 +45,8 @@ public class LoginServlet extends HttpServlet {
 			request.getRequestDispatcher("login.jsp").forward(request, response);
 			return;
 		}
-
+		
+		
 		// 処理
 		User user = new User(name, pass);
 		boolean result = new LoginModel().auth(user);
@@ -58,8 +61,38 @@ public class LoginServlet extends HttpServlet {
 			ArrayList<Todo> todoList = new ArrayList<Todo>();
 			new TodoModel().regist(todoList, new Todo(3, "OOPやる", "2021-07-21","勉強"));
 			new TodoModel().regist(todoList, new Todo(5, "WAC1やる", "2021-07-28","勉強"));
-			new TodoModel().regist(todoList, new Todo(4, "WAC2やる", "2021-10-20","勉強"));//テストデータ
+			new TodoModel().regist(todoList, new Todo(4, "WAC2やる", "2021-10-20","勉強"));
+			
+			
+			//テストデータの作成（bmi)
+			double weight = 59.6;
+			double height = 168;
+			Bmi bmi = new Bmi();
+			bmi.setWeight(weight);
+			bmi.setHeight(height);
+			
+			
+			//計算
+			BmiModel bmimodel = new BmiModel();
+			bmimodel.bmi(bmi);
+			
+			
+			
+			
+			
+		    		    
+		    
+		    
+		    
+		    
+			
+			
+			
+			
+			
+			//テストデータ
 			session.setAttribute("todoList", todoList);
+			request.setAttribute("bmi", bmi);
 
 			response.sendRedirect("MainServlet");
 			return;
