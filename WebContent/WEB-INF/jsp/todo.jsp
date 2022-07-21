@@ -56,6 +56,7 @@ function selectboxChange() {
 		</select>
 		<input type="text" name="info" size="20" value="" placeholder="内容">
 		<input type="date" name="deadline">
+		<input type="text" name="genre" id="genre"  value="">
 		<input type="submit" value="登録">
 	</form>
 </section>
