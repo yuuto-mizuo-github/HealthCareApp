@@ -39,7 +39,7 @@ public class TodoRegistServlet extends LoginCheckServlet {
 		if (deadline == null || deadline.length() == 0) {
 			errorMsg.append("期日が入力されていません<br>");
 		}
-		if (deadline == null || deadline.length() == 0) {
+		if (genre == null || genre.length() == 0) {
 			errorMsg.append("ジャンルが入力されていません<br>");
 		}
 		if (errorMsg.length() > 0) {
