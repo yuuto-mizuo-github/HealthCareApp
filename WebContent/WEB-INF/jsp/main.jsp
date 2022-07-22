@@ -20,68 +20,72 @@
 </head>
 
 <body>
-<div class="container">
+	<div class="container">
 
-<header>
-	<a  href="BMI_firstServlet">>>BMIへ</a>
-	<h1><a href="MainServlet">へるすけあ</a></h1>
-	<a href="LogoutServlet" class="block-right">ログアウト</a>
-</header>
+		<header>
+			<h1>
+				<a href="MainServlet">へるすけあ</a>
+			</h1>
+			<a href="LogoutServlet" class="block-right">ログアウト</a>
+		</header>
 
-<section>
-	<img class="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
-	<h4>${user.name}</h4>
-</section>
+		<section>
+			<img class="profile-img" src="images/366TSURUTAMA20211_TP_V4.jpg"
+				alt="女性" />
+			<h4>${user.name}</h4>
+		</section>
 
-<hr>
+		<hr>
 
-<p class="error">${errorMsg}</p>
+		<p class="error">${errorMsg}</p>
 
-<section>
-	<div class="card card-smart">
-		<h4>TODO の トピック</h4>
-		<a class="card-link-text" href="TodoServlet">>>TODOへ</a><br>
+		<section>
+			<div class="card card-smart">
+				<h4>TODO の トピック</h4>
+				<a class="card-link-text" href="TodoServlet">>>TODOへ</a><br>
 
-		<c:choose>
-			<c:when test="${todoTopic == null}" >
-				<p>実行待ちのTODOはありません</p>
-			</c:when>
+				<c:choose>
+					<c:when test="${todoTopic == null}">
+						<p>実行待ちのTODOはありません</p>
+					</c:when>
 
-			<c:otherwise>
-				<div class="table-responsive">
-					<table id="targetTable" class="table table-striped">
-					<thead>
-						<tr>
-							<th>重要度</th>
-							<th>内容</th>
-							<th>期日</th>
-							<th>ジャンル</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>${todoTopic.important}</td>
-							<td>${todoTopic.info}</td>
-							<td>${todoTopic.deadline}</td>
-							<td>${todoTopic.genre}</td>
-						</tr>
-					</tbody>
-					</table>
-					<section>
-					<table border="1">
-					<tr>
-					<th>前回のBMI</th>
-					<td>${bmi.bmi}</td>
-					</tr>
-					</table>
-				
-					</section>
-				</div>
-			</c:otherwise>
-		</c:choose>
+					<c:otherwise>
+						<div class="table-responsive">
+							<table id="targetTable" class="table table-striped">
+								<thead>
+									<tr>
+										<th>重要度</th>
+										<th>内容</th>
+										<th>期日</th>
+										<th>ジャンル</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>${todoTopic.important}</td>
+										<td>${todoTopic.info}</td>
+										<td>${todoTopic.deadline}</td>
+										<td>${todoTopic.genre}</td>
+									</tr>
+								</tbody>
+							</table>
+							<section></section>
+						</div>
+					</c:otherwise>
+				</c:choose>
+			</div>
+		</section>
+		<table border="1">
+			<tr>
+				<th>前回のBMI</th>
+				<th>${bmi.bmi}</th>
+				<input type="hidden"　name="sabun" value=${bmi.sabun}>
+			</tr>
+		</table>
+
 	</div>
-</section>
-
-</div>
+	<h3>
+		<a href="BMI_firstServlet">>>BMI計算画面へ</a>
+	</h3>
 </body>
 </html>
