@@ -23,6 +23,7 @@
 <div class="container">
 
 <header>
+	<a  href="BMI_firstServlet">>>BMIへ</a>
 	<h1><a href="MainServlet">へるすけあ</a></h1>
 	<a href="LogoutServlet" class="block-right">ログアウト</a>
 </header>
@@ -39,7 +40,7 @@
 <section>
 	<div class="card card-smart">
 		<h4>TODO の トピック</h4>
-		<a class="card-link-text" href="TodoServlet">>>TODOへ</a>
+		<a class="card-link-text" href="TodoServlet">>>TODOへ</a><br>
 
 		<c:choose>
 			<c:when test="${todoTopic == null}" >
@@ -73,6 +74,7 @@
 					<td>${bmi.bmi}</td>
 					</tr>
 					</table>
+				
 					</section>
 				</div>
 			</c:otherwise>

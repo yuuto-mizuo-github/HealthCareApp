@@ -33,7 +33,7 @@ public class BMIServlet extends HttpServlet {
 		
 		
 		//前回のやつの保存
-		Bmi BMI = new Bmi();
+		Bmi BMI = new Bmi(); 
 		double maebmi=BMI.getBmi();
 		
 		
