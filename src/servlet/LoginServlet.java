@@ -75,6 +75,10 @@ public class LoginServlet extends HttpServlet {
 			//計算
 			BmiModel bmimodel = new BmiModel();
 			bmimodel.bmi(bmi);
+			bmi.setSabun(bmi.getBmi());
+			
+
+			
 			
 			
 			
@@ -92,7 +96,7 @@ public class LoginServlet extends HttpServlet {
 			
 			//テストデータ
 			session.setAttribute("todoList", todoList);
-			request.setAttribute("bmi", bmi);
+			session.setAttribute("bmi", bmi);
 
 			response.sendRedirect("MainServlet");
 			return;

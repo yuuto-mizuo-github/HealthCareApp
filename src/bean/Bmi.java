@@ -7,6 +7,8 @@ public class Bmi {
 	private double weight;
 	/**bmi**/
 	private double bmi;
+	/**差分**/
+	private double sabun;
 	
 	
 
@@ -30,6 +32,12 @@ public class Bmi {
 	}
 	public void setBmi(double bmi) {
 		this.bmi = bmi;
+	}
+	public double getSabun() {
+		return sabun;
+	}
+	public void setSabun(double sabun) {
+		this.sabun = sabun;
 	}
 
 

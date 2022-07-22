@@ -7,6 +7,8 @@ public class BmiModel {
 		double weight = bmi.getWeight();
 		double height = bmi.getHeight();
 		double BMI = weight/(height/100.0*height/100.0);
+		BMI = Math.round(BMI * 100) / 100.0;
+		
 		bmi.setBmi(BMI);
 		
 		
@@ -19,15 +21,16 @@ public class BmiModel {
 		
 	}
 
-	public double sabun(Bmi bmi, double maebmi) {
+	public void sabun(Bmi bmi) {
 		double BMI = bmi.getBmi();
-		double sabun = maebmi-BMI;
+		double sabun = bmi.getSabun();
+		double Sabun = BMI-sabun;
+		Sabun = Math.round(Sabun * 100) / 100.0;
 		
-		double sippai = -1;
-		if (sabun<0) {
-			return sabun;
+		if (Sabun>0) {
+			bmi.setSabun(Sabun);
 		}else {
-			return  sippai;
+			bmi.setSabun(Sabun);
 		}
 		
 	}
