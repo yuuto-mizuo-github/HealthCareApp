@@ -15,7 +15,7 @@ public class LoginModel {
 	 */
 	public boolean auth(User user) {
 		// FIXME 固定パスワードで暫定実装中
-		if (user.getPass().equals("1234")) {
+		if (user.getPass().equals("hcs")) {
 			// 認証成功
 			return true;
 		} else {
