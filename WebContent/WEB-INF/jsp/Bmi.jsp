@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<body background="/images/a.jpg">
+<body background="images/a.jpg">
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/style.css">
@@ -19,6 +19,9 @@
 		type="text" name="weight" id="weight" value=""> <input
 		type="hidden" name="sabun" id="sabun" value="${bmi.sabun}"> <input
 		type="submit" value="登録">
+		<h3>
+		<a href="MainServlet">>>戻る</a>
+	</h3>
 </form>
 </body>
 </html>

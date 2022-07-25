@@ -18,6 +18,9 @@ color: red;
 		<h1>～BMI結果～</h1>
 		<p>今回のBMI<strong>${bmi.bmi}</strong></p>
 		<p>前回との差分<strong>${bmi.sabun}</strong></p>
+		<h3>
+		<a href="MainServlet">>>メイン画面へ</a>
+	</h3>
 
 </body>
 </html>
