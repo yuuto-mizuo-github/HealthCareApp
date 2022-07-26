@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 <html>
-
+<body background="images/main.jpg">
 <head>
 <meta charset="UTF-8">
 <title>ヘルスケア - メイン画面</title>
@@ -24,7 +24,7 @@
 
 		<header>
 			<h1>
-				<a href="MainServlet">へるすけあ</a>
+				<a href="MainServlet"><font color="write">へるすけあ</font></a>
 			</h1>
 			<a href="LogoutServlet" class="block-right">ログアウト</a>
 		</header>
@@ -87,5 +87,9 @@
 	<h3>
 		<a href="BMI_firstServlet">>>BMI計算画面へ</a>
 	</h3>
+<h3>
+<a href="kintoreServlet">>>筋トレ画面へ</a>
+</h3>
+
 </body>
 </html>

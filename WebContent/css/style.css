@@ -20,6 +20,7 @@ body, html {
 .block-right {
 	display: block;
 	text-align: right;
+	text-decoration: none;
 }
 
 .form-select {
@@ -73,3 +74,58 @@ body, html {
 	width: 48px;
 	height: 48px;
 }
+
+.table-responsive{
+	margin-left: auto;
+    margin-right: auto;
+     font-size: 150%;
+	
+}
+.hiduke{
+	font-size: 130%;
+}
+div{
+	font-size: 130%;
+}
+
+.button {
+  display       : inline-block;
+  border-radius : 20%;          /* 角丸       */
+  font-size     : 26pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 13px 17px;   /* 余白       */
+  background    : #1a1aff;     /* 背景色     */
+  color         : #ffffff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 7px 7px 4px #666666;  /* 影の設定 */
+  border        : 2px solid #1a1aff;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #1a1aff;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.btn01 a {
+	background-color: #ceb849;
+	border: 1px solid #ceb849;
+}
+
+.btn01 a:hover {
+	background-color: #B99b00;
+	border: 1px solid #333;
+}
+
+.btn01 a::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -35px;
+	transform: translateY(-50%);
+	width: 70px;
+	height: 1px;
+	background-color: #333;
+}
+
