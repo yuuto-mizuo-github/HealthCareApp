@@ -24,7 +24,7 @@
 	 <th>
 	<input type="checkbox" name="squat" value="">スクワット １００回<br>
 	<input type="checkbox" name="situp" value="">腹筋 １００回<br>
-	<input type="checkbox" name="pushps" value="">腕立て伏せ １００回<br>
+	<input type="checkbox" name="pushups" value="">腕立て伏せ １００回<br>
 	<input type="checkbox" name="running" value="">ランニング ３０分<br>
 	</th>
 	</table><br><br>
