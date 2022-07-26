@@ -27,8 +27,8 @@ public class kintore_recordServlet extends HttpServlet {
 			throws ServletException, IOException {
 		// パラメータ取得
 		String squat = request.getParameter("squat");
-		String situp = request.getParameter(" situp");
-		String pushups = request.getParameter(" pushups");
+		String situp = request.getParameter("situp");
+		String pushups = request.getParameter("pushups");
 		String running = request.getParameter("running");
 		String deadline = request.getParameter("deadline");
 
