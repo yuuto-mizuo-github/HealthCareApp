@@ -9,7 +9,7 @@
 </head>
 <body>
 		<h1>
-				${"kintore.deadline"}筋トレ成果
+				${kintore.deadline}筋トレ成果
 			</h1><br><br>
 	 <table border="1" class="table-responsive">
     <tr>
@@ -19,10 +19,10 @@
       <th>ランニング</th>
     </tr>
     <tr>
-      <td>${"kintore.squat" }</td>
-      <td>${"kintore.situp" }</td>
-      <td>${"kintore.pushps" }</td>
-      <td>${"kintore.running" }</td>
+      <td>${kintore.squat }</td>
+      <td>${kintore.situp }</td>
+      <td>${kintore.pushups }</td>
+      <td>${kintore.running }</td>
     </tr>
   </table><br>
 		<div  class="btn btn01">

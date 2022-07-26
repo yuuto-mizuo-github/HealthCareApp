@@ -79,7 +79,7 @@
 			<tr>
 				<th>前回のBMI</th>
 				<th>${bmi.bmi}</th>
-				<input type="hidden"　name="sabun" value=${bmi.sabun}>
+				<input type="hidden" name="sabun" value=${bmi.sabun}>
 			</tr>
 		</table>
 
