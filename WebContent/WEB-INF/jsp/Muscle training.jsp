@@ -2,14 +2,16 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<body background="images/haikei.jpg">
 <head>
 <meta charset="UTF-8">
 <title>筋トレ！！</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
 
-		<header>
+	<header>
 			<h1>
 				筋トレメニュー
 			</h1>

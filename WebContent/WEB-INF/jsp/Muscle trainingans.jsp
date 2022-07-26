@@ -2,10 +2,12 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<body background="images/haikei.jpg">
 <head>
 <meta charset="UTF-8">
 <title>今日の筋トレ成果</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
 		<h1>
@@ -21,7 +23,7 @@
     <tr>
       <td>${kintore.squat }</td>
       <td>${kintore.situp }</td>
-      <td>${kintore.pushups }</td>
+			<td>${kintore.pushups }</td>
       <td>${kintore.running }</td>
     </tr>
   </table><br>
