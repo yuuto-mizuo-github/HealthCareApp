@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<body background="images/a.jpg">
+<body background="">
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/style.css">
