@@ -11,6 +11,9 @@
 </head>
 <body>
 
+<p class="error">${errorMsg}</p>
+
+<hr>
 	<header>
 			<h1>
 				筋トレメニュー
