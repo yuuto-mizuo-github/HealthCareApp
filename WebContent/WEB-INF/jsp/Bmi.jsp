@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="css/style.css">
 <title>入力画面</title>
 </head>
+<p class="error">${errorMsg}</p>
+<hr>
 <form action="BMIServlet" method="post">
 <img class="bmi" src="images/download.jpg">
 	<h1>BMI</h1>

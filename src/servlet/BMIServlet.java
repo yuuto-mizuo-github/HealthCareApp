@@ -31,7 +31,22 @@ public class BMIServlet extends HttpServlet {
 		String sabun = request.getParameter("sabun");
 		
 		
-		
+		// パラメータチェック
+				StringBuilder errorMsg = new StringBuilder();
+				if (height == null || height.length() == 0) {
+					errorMsg.append("身長が入力されていません<br>");
+				}
+				if (weight == null || weight.length() == 0) {
+					errorMsg.append("体重が入力されていません<br>");
+				}
+				if (errorMsg.length() > 0) {
+					// エラー発生
+					request.setAttribute("errorMsg", errorMsg);
+
+					request.getRequestDispatcher("/WEB-INF/jsp/Bmi.jsp").forward(request, response);
+					return;
+				}
+
 		
 	
 		

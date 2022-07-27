@@ -9,14 +9,10 @@
 <meta charset="UTF-8">
 <title>ヘルスケア - メイン画面</title>
 
-<link rel="shortcut icon" href="images/favicon.ico">
-
 <script src="js/jquery-3.2.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/bootstrap.min.css">
-
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -24,7 +20,7 @@
 
 		<header>
 			<h1>
-				<a href="MainServlet"><font color="write">へるすけあ</font></a>
+				<a href="MainServlet"><font color="write">ヘルスケア</font></a>
 			</h1>
 			<a href="LogoutServlet" class="block-right">ログアウト</a>
 		</header>

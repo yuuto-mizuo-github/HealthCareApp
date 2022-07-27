@@ -6,8 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>今日の筋トレ成果</title>
-<link rel="stylesheet" href="css/style.css">
 <link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 		<h1>
