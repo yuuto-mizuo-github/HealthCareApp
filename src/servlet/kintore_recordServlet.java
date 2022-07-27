@@ -32,6 +32,19 @@ public class kintore_recordServlet extends HttpServlet {
 		String running = request.getParameter("running");
 		String deadline = request.getParameter("deadline");
 
+		// パラメータチェック
+		StringBuilder errorMsg = new StringBuilder();
+		if (deadline == null|| deadline.length() == 0) {
+			errorMsg.append("日付が入力されていません<br>");
+		}
+		if (errorMsg.length() > 0) {
+			// エラー発生
+			request.setAttribute("errorMsg", errorMsg);
+
+			request.getRequestDispatcher("/WEB-INF/jsp/Muscle training.jsp").forward(request, response);
+			return;
+		}
+
 		if (squat == null) {
 			squat = "×";
 		} else {
@@ -55,7 +68,6 @@ public class kintore_recordServlet extends HttpServlet {
 		} else {
 			running = "○";
 		}
-
 
 		// 入力値をプロパティに設定
 		kintore kintore = new kintore();
