@@ -1,5 +1,4 @@
 ﻿@charset "UTF-8";
-
 /* 全体 */
 body, html {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
@@ -7,26 +6,21 @@ body, html {
 	height: 100%;
 	text-align: center;
 }
-
 .container {
 	max-width: 600px;
 }
-
 .block-left {
 	display: block;
 	text-align: left;
 }
-
 .block-right {
 	display: block;
 	text-align: right;
 	text-decoration: none;
 }
-
 .form-select {
 	height: 26px;
 }
-
 /** エラーメッセージ */
 .error {
 	background-color: pink;
@@ -34,7 +28,6 @@ body, html {
 	margin: 10px auto;
 	border-radius: 2px;
 }
-
 /* カード */
 .card {
 	position: relative;
@@ -45,19 +38,16 @@ body, html {
 	border-radius: 2px;
 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
 .card-smart {
-	background-color: #cceeff;
+	background-color: #CCEEFF;
 	margin: 0 auto;
 	padding: 5px 10px 15px;
 }
-
 .card-link-text {
 	position: absolute;
 	top: 5px;
 	right: 5px;
 }
-
 /* プロフィール画像 */
 .profile-img {
 	display: block;
@@ -66,7 +56,6 @@ body, html {
 	margin: 0 auto 10px;
 	border-radius: 50%;
 }
-
 .profile-fix-header {
 	position: absolute;
 	top: 10px;
@@ -74,7 +63,6 @@ body, html {
 	width: 48px;
 	height: 48px;
 }
-
 .table-responsive{
 	margin-left: auto;
     margin-right: auto;
@@ -84,8 +72,6 @@ body, html {
 .hiduke{
 	font-size: 130%;
 }
-
-
 .button {
   display       : inline-block;
   border-radius : 20%;          /* 角丸       */
@@ -93,29 +79,26 @@ body, html {
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 13px 17px;   /* 余白       */
-  background    : #1a1aff;     /* 背景色     */
-  color         : #ffffff;     /* 文字色     */
+  background    : #1A1AFF;     /* 背景色     */
+  color         : #FFFFFF;     /* 文字色     */
   line-height   : 1em;         /* 1行の高さ  */
   transition    : .3s;         /* なめらか変化 */
   box-shadow    : 7px 7px 4px #666666;  /* 影の設定 */
-  border        : 2px solid #1a1aff;    /* 枠の指定 */
+  border        : 2px solid #1A1AFF;    /* 枠の指定 */
 }
 .button:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
-  color         : #1a1aff;     /* 背景色     */
-  background    : #ffffff;     /* 文字色     */
+  color         : #1A1AFF;     /* 背景色     */
+  background    : #FFFFFF;     /* 文字色     */
 }
-
 .btn01 a {
-	background-color: #ceb849;
-	border: 1px solid #ceb849;
+	background-color: #CEB849;
+	border: 1px solid #CEB849;
 }
-
 .btn01 a:hover {
-	background-color: #B99b00;
+	background-color: #B99B00;
 	border: 1px solid #333;
 }
-
 .btn01 a::after {
 	content: '';
 	position: absolute;
@@ -126,4 +109,3 @@ body, html {
 	height: 1px;
 	background-color: #333;
 }
-
