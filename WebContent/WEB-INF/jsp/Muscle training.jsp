@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<p class="error">${errorMsg}</p>
+	<p class="error">${errorMsg}</p>
 
 <hr>
 	<header>

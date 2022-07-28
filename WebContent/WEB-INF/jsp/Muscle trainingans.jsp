@@ -13,7 +13,7 @@
 		<h1>
 				${kintore.deadline}筋トレ成果
 			</h1><br><br>
-	 <table border="1" class="table-responsive">
+	<table border="1" class="table-responsive">
     <tr>
       <th>スクワット</th>
       <th>腹筋</th>
