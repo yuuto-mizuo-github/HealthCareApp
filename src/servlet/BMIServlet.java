@@ -1,5 +1,4 @@
 package servlet;
-
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
@@ -11,14 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 
 import bean.Bmi;
 import model.BmiModel;
-
 /**
  * Servlet implementation class BMIServlet
  */
 @WebServlet("/BMIServlet")
 public class BMIServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -42,11 +39,9 @@ public class BMIServlet extends HttpServlet {
 				if (errorMsg.length() > 0) {
 					// エラー発生
 					request.setAttribute("errorMsg", errorMsg);
-
 					request.getRequestDispatcher("/WEB-INF/jsp/Bmi.jsp").forward(request, response);
 					return;
 				}
-
 		
 	
 		
@@ -57,13 +52,11 @@ public class BMIServlet extends HttpServlet {
 		bmi.setSabun(Double.parseDouble(sabun));
 		bmi.setHeight(Double.parseDouble(height));
 		bmi.setWeight(Double.parseDouble(weight));
-
 		//計算
 		BmiModel bmimodel = new BmiModel();
 		bmimodel.bmi(bmi);
 	    bmimodel.sabun(bmi);
 		
-
 		
 		//保存
 		request.setAttribute("bmi", bmi);
@@ -73,5 +66,4 @@ public class BMIServlet extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/Bmians.jsp");
 		dispatcher.forward(request, response);
 	}
-
 }
